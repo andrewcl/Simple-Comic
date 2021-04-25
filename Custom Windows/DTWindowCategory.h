@@ -8,9 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface NSWindow (DTWindowExtension)
-
 
 - (float)toolbarHeight;
 - (BOOL)isFullscreen;

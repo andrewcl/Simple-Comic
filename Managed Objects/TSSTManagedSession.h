@@ -8,10 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface TSSTManagedSession : NSManagedObject {
-
 }
-
 
 @end

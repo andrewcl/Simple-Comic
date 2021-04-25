@@ -10,16 +10,12 @@
 
 @implementation NSWindow (DTWindowExtension)
 
-- (float)toolbarHeight
-{
-    return NSHeight([self frame]) - NSHeight([[self contentView] frame]);
+- (float)toolbarHeight {
+  return NSHeight([self frame]) - NSHeight([[self contentView] frame]);
 }
 
-
-- (BOOL)isFullscreen
-{
-    return (([self styleMask] & NSFullScreenWindowMask) == NSFullScreenWindowMask);
+- (BOOL)isFullscreen {
+  return (([self styleMask] & NSFullScreenWindowMask) == NSFullScreenWindowMask);
 }
-
 
 @end

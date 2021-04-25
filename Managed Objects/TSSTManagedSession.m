@@ -11,27 +11,22 @@
 
 @implementation TSSTManagedSession
 
-
 /*	The whole point of this method is to check for files in a session.
-	Making sure they are still there.  If not they are deleted. */
-- (void)awakeFromFetch
-{
-	[super awakeFromFetch];
-	TSSTManagedGroup * group;
-	NSString * path;
-    /* By calling path for all children, groups with unresolved bookmarks
-     are deleted. */
-	for (group in [self valueForKey: @"groups"])
-	{
-		path = [group path];
-	}
+        Making sure they are still there.  If not they are deleted. */
+- (void)awakeFromFetch {
+  [super awakeFromFetch];
+  TSSTManagedGroup* group;
+  NSString* path;
+  /* By calling path for all children, groups with unresolved bookmarks
+   are deleted. */
+  for (group in [self valueForKey:@"groups"]) {
+    path = [group path];
+  }
 }
-
 
 //- (void)savePageOrder
 //{
 //	NSSet * groups = [self valueForKey: @"groups"];
 //}
-
 
 @end

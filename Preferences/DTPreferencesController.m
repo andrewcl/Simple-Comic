@@ -8,13 +8,11 @@
 
 #import "DTPreferencesController.h"
 
-
 @implementation DTPreferencesController
 
-- (id)init
-{
-    self = [super initWithWindowNibName: @"Preferences"];
-    return self;
+- (id)init {
+  self = [super initWithWindowNibName:@"Preferences"];
+  return self;
 }
 
 @end

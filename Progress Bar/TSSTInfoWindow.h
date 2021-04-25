@@ -8,12 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 /*
  This panel subclass is used by both the loupe and the speach bubble styled
  page preview.
  */
-@interface TSSTInfoWindow : NSPanel { }
+@interface TSSTInfoWindow : NSPanel {
+}
 
 - (void)caretAtPoint:(NSPoint)point size:(NSSize)size withLimitLeft:(float)left right:(float)right;
 - (void)centerAtPoint:(NSPoint)center;
@@ -21,23 +21,17 @@
 
 @end
 
-
-
-@interface TSSTInfoView : NSView
-{
-    float caretPosition;
-	BOOL bordered;
+@interface TSSTInfoView : NSView {
+  float caretPosition;
+  BOOL bordered;
 }
 
-@property (assign) BOOL bordered;
-@property (nonatomic, assign) float caretPosition;
+@property(assign) BOOL bordered;
+@property(nonatomic, assign) float caretPosition;
 
 @end
-
 
 @interface TSSTCircularImageView : NSImageView {
-    
 }
 
 @end
-

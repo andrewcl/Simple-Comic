@@ -8,16 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-
-@interface TSSTImageView : NSImageView
-{
-    BOOL clears;
-    NSString * imageName;
+@interface TSSTImageView : NSImageView {
+  BOOL clears;
+  NSString* imageName;
 }
 
-@property (retain) NSString * imageName;
+@property(retain) NSString* imageName;
 - (void)setClears:(BOOL)yes;
 - (BOOL)clears;
-
 
 @end
